@@ -16,4 +16,18 @@
 
 ## 推荐使用yarn
     配置好了之后最好再install一下
+   
+---
+
+##2018.10.21 xiaohua
+
+main.js
+
+    import seeImage from './components/plugin/seeImage'
+    Vue.use(seeImage)
+    
+demo.vue
+
+    <img src="/static/img/img.jpg" @click="$seeImage"/>
+    <button v-bind:data-src="imgUrl" @click="$seeImage">查看图片</button >
     

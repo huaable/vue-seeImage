@@ -41,7 +41,7 @@ SeeImage.install = Vue => {
 
 
     Vue.prototype.$seeImage = (e) => {
-        instance.currentImg = e.currentTarget.currentSrc;
+		instance.currentImg = e.currentTarget.getAttribute('data-src')||e.currentTarget.currentSrc ;
         instance.isShowImageDialog = true;
     }
 }
